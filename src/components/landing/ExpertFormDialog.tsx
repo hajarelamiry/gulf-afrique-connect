@@ -12,11 +12,13 @@ interface ExpertFormDialogProps {
 
 const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
   const { t } = useTranslation();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
     if (!form.name.trim() || !form.email.trim()) {
       toast.error(t("form.errorRequired"));
       return;
@@ -25,9 +27,38 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
       toast.error(t("form.errorEmail"));
       return;
     }
-    toast.success(type === "client" ? t("form.successClient") : t("form.successTalent"));
-    setForm({ name: "", email: "", organization: "", message: "" });
-    setOpen(false);
+
+    setLoading(true);
+    try {
+      const response = await fetch("/api/forms/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type,
+          name: form.name,
+          email: form.email,
+          organization: form.organization,
+          message: form.message,
+        }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        toast.error(error.error || "Failed to submit form");
+        return;
+      }
+
+      toast.success(type === "client" ? t("form.successClient") : t("form.successTalent"));
+      setForm({ name: "", email: "", organization: "", message: "" });
+      setOpen(false);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("An error occurred. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -88,9 +119,10 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
           </div>
           <button
             type="submit"
-            className="w-full py-3 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange"
+            disabled={loading}
+            className="w-full py-3 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            {type === "client" ? t("form.submitClient") : t("form.submitTalent")}
+            {loading ? "Sending..." : (type === "client" ? t("form.submitClient") : t("form.submitTalent"))}
           </button>
         </form>
       </DialogContent>

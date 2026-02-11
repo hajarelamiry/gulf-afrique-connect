@@ -17,33 +17,22 @@ const fadeUp = {
 const AdvantagesSection = () => (
   <section id="advantages" className="py-24">
     <div className="container mx-auto px-4">
-      <motion.p
-        initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0} variants={fadeUp}
-        className="text-gold font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3 text-center"
-      >
+      <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0} variants={fadeUp}
+        className="text-primary font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3 text-center">
         Valeur Ajoutée
       </motion.p>
-      <motion.h2
-        initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
-        className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-16"
-      >
+      <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
+        className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-16">
         Pourquoi choisir ResearchGuide ?
       </motion.h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {advantages.map((a, i) => (
-          <motion.div
-            key={i}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={i + 2}
-            variants={fadeUp}
-            className={`p-6 rounded-2xl border border-border bg-card hover:shadow-gold transition-shadow duration-300 ${
+          <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i + 2} variants={fadeUp}
+            className={`p-6 rounded-2xl border border-border bg-card hover:shadow-orange transition-shadow duration-300 ${
               i >= 3 ? "lg:col-span-1 lg:last:col-start-2" : ""
-            }`}
-          >
-            <a.icon size={28} className="text-gold mb-4" />
+            }`}>
+            <a.icon size={28} className="text-primary mb-4" />
             <h3 className="font-display text-lg font-bold text-foreground mb-2">{a.title}</h3>
             <p className="font-body text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
           </motion.div>

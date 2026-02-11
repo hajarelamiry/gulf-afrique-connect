@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "advantages": "Advantages",
+    "faq": "FAQ",
+    "findExpert": "Find an Expert"
+  },
+  "hero": {
+    "badge": "On-Demand Expertise Platform",
+    "title": "The Bridge of Scientific Excellence between ",
+    "titleHighlight": "Africa and the Gulf",
+    "subtitle": "Access the Top 5% of R&D talent and world-class strategic expertise through a verified corridor, aligned with Qatar's National Vision 2030.",
+    "btnClient": "Find an R&D Expert",
+    "btnTalent": "Join the Elite Network",
+    "h1": "Top 5% Certified Talents",
+    "h2": "AI & Energy Tech Scouting",
+    "h3": "IP Compliance & SLA"
+  },
+  "problem": {
+    "challengeLabel": "The Challenge",
+    "challengeTitle": "Innovation in Qatar faces a critical dual challenge",
+    "challenges": [
+      "Access to Emerging Knowledge: difficulty in quickly identifying and validating Tech Scouting solutions in AI, Renewable Energies and Smart Cities.",
+      "Qualified Resources for Execution: urgent need for flexible scientific workforce (PhDs, Engineers) at competitive cost."
+    ],
+    "solutionLabel": "The Solution",
+    "solutionTitle": "ResearchGuide: A structured talent corridor",
+    "solutions": [
+      "A Verified Skills Corridor between Africa and the Gulf.",
+      "On-Demand Expertise aligned with Qatar's National Vision 2030.",
+      "A robust ecosystem connecting Morocco's scientific pool to Qatar's sovereign entities."
+    ]
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "A Unique Hybrid Model",
+    "subtitle": "We combine Upwork's flexibility, Toptal's B2B trust, Kolabtree's specialization, and GLG's elite advisory.",
+    "items": [
+      { "title": "Certified Talents", "desc": "A pool of PhDs, researchers and senior engineers (Top 5-10%) rigorously selected through a five-step process." },
+      { "title": "Elite Strategic Advisory", "desc": "Rapid access to global strategic knowledge and decision-makers for technology due diligence." },
+      { "title": "Flexible R&D Execution", "desc": "Scientific workforce for data analysis, modeling and engineering at competitive costs." },
+      { "title": "Compliance & IP", "desc": "Secure contractual framework ensuring intellectual property assignment and quality standards (SLA)." }
+    ]
+  },
+  "process": {
+    "label": "The \"Vetted\" Label",
+    "title": "A 5-step selection process",
+    "subtitle": "Only the top 5% of candidates join our elite network.",
+    "steps": [
+      { "title": "Academic Verification", "desc": "Validation of degrees, publications and research track record." },
+      { "title": "Technical Assessment", "desc": "In-depth skills testing in the targeted area of expertise." },
+      { "title": "B2B Case Study", "desc": "Simulation of a real mission to assess execution capability." },
+      { "title": "Cultural Fit", "desc": "Interview evaluating adaptability and cross-cultural communication." },
+      { "title": "Contractual Verification", "desc": "Legal compliance, IP and SLA commitment." }
+    ]
+  },
+  "advantages": {
+    "label": "Value Proposition",
+    "title": "Why choose ResearchGuide?",
+    "items": [
+      { "title": "Vetted Label (Top 5%)", "desc": "Rigorous 5-step verification ensuring academic excellence, technical mastery and cultural reliability." },
+      { "title": "IP Compliance & Security", "desc": "Strict contractual management including Intellectual Property assignment to secure your investments." },
+      { "title": "72h SLA Guarantee", "desc": "Commitment to rapid expert replacement within 72 hours if the profile doesn't match your expectations." },
+      { "title": "Bilingual Service", "desc": "Dedicated support in Arabic and English for cultural mediation and smooth project management." },
+      { "title": "Research Showcase", "desc": "An exclusive feature allowing Elite clients to discover the next wave of emerging technologies." }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "How do you guarantee expert quality?", "a": "Each talent goes through a five-step vetting process: academic verification, technical assessment, B2B case study simulating a mission, cultural fit interview and contractual verification." },
+      { "q": "What happens to Intellectual Property (IP)?", "a": "Security is our priority. All our talents sign a framework agreement including full IP assignment to the client upon project validation." },
+      { "q": "What if an expert doesn't fit?", "a": "Thanks to our SLA commitment, we guarantee an equivalent replacement within 72 hours to minimize any risk of work interruption." },
+      { "q": "What areas of expertise are covered?", "a": "We focus on strategic R&D pillars: AI, Renewable Energies, Smart Cities and complex engineering." },
+      { "q": "How are talent payments managed?", "a": "We ensure total financial security with guaranteed payment within 7 days after deliverable validation." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to accelerate your innovation?",
+    "subtitle": "Join the scientific excellence corridor between Africa and the Gulf.",
+    "clientLabel": "Organizations (Gulf)",
+    "clientTitle": "Access the top 5% of African scientific expertise",
+    "clientDesc": "Find PhDs, researchers and senior engineers for your strategic R&D projects.",
+    "clientBtn": "Find an R&D Expert",
+    "talentLabel": "Talents (Africa)",
+    "talentTitle": "Showcase your expertise and join an elite network",
+    "talentDesc": "Access international funding and premium opportunities in the Gulf.",
+    "talentBtn": "Join the Network"
+  },
+  "footer": {
+    "copyright": "© {{year}} ResearchGuide. The Bridge of Scientific Excellence between Africa and the Gulf."
+  },
+  "form": {
+    "clientTitle": "Find an R&D Expert",
+    "talentTitle": "Join the Elite Network",
+    "name": "Full name",
+    "namePlaceholderClient": "Your name",
+    "namePlaceholderTalent": "Dr. / Prof. Name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "orgLabel": "Organization",
+    "orgLabelTalent": "University / Institution",
+    "orgPlaceholderClient": "Your company name",
+    "orgPlaceholderTalent": "Your institution",
+    "messageClient": "Describe your need",
+    "messageTalent": "Area of expertise",
+    "messagePlaceholderClient": "Ex: We are looking for an AI expert for a 3-month project...",
+    "messagePlaceholderTalent": "Ex: PhD in Artificial Intelligence, 5 years of experience...",
+    "submitClient": "Send my request",
+    "submitTalent": "Submit my application",
+    "required": "*",
+    "errorRequired": "Please fill in the required fields.",
+    "errorEmail": "Please enter a valid email.",
+    "successClient": "Your request has been sent! We will contact you within 24h.",
+    "successTalent": "Your application has been received! Our team will contact you soon."
+  }
+}

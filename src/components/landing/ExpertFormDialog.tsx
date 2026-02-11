@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -19,7 +20,7 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!form.name.trim() || !form.email.trim()) {
+    if (!form.name.trim() || !form.email.trim() || !form.organization.trim() || !form.message.trim()) {
       toast.error(t("form.errorRequired"));
       return;
     }
@@ -80,6 +81,8 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               placeholder={type === "client" ? t("form.namePlaceholderClient") : t("form.namePlaceholderTalent")}
               maxLength={100}
+              required
+              aria-required
             />
           </div>
           <div>
@@ -92,22 +95,26 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               placeholder={t("form.emailPlaceholder")}
               maxLength={255}
+              required
+              aria-required
             />
           </div>
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              {type === "client" ? t("form.orgLabel") : t("form.orgLabelTalent")}
+              {type === "client" ? t("form.orgLabel") : t("form.orgLabelTalent")} <span className="text-primary">{t("form.required")}</span>
             </label>
             <Input
               value={form.organization}
               onChange={(e) => setForm({ ...form, organization: e.target.value })}
               placeholder={type === "client" ? t("form.orgPlaceholderClient") : t("form.orgPlaceholderTalent")}
               maxLength={150}
+              required
+              aria-required
             />
           </div>
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              {type === "client" ? t("form.messageClient") : t("form.messageTalent")}
+              {type === "client" ? t("form.messageClient") : t("form.messageTalent")} <span className="text-primary">{t("form.required")}</span>
             </label>
             <Textarea
               value={form.message}
@@ -115,6 +122,8 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
               placeholder={type === "client" ? t("form.messagePlaceholderClient") : t("form.messagePlaceholderTalent")}
               maxLength={1000}
               rows={3}
+              required
+              aria-required
             />
           </div>
           <button

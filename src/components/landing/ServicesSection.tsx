@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { GraduationCap, BrainCircuit, FlaskConical, FileCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";

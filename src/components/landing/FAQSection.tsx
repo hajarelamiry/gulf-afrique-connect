@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";

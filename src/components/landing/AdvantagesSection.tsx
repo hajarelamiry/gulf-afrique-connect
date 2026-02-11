@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { BadgeCheck, ShieldCheck, Clock, Languages, Telescope } from "lucide-react";
 import { useTranslation } from "react-i18next";

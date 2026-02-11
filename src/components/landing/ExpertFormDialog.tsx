@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,22 +13,19 @@ interface ExpertFormDialogProps {
 const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
+  const { t } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim()) {
-      toast.error("Veuillez remplir les champs obligatoires.");
+      toast.error(t("form.errorRequired"));
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      toast.error("Veuillez entrer un email valide.");
+      toast.error(t("form.errorEmail"));
       return;
     }
-    toast.success(
-      type === "client"
-        ? "Votre demande a été envoyée ! Nous vous contacterons sous 24h."
-        : "Votre candidature a été reçue ! Notre équipe vous contactera bientôt."
-    );
+    toast.success(type === "client" ? t("form.successClient") : t("form.successTalent"));
     setForm({ name: "", email: "", organization: "", message: "" });
     setOpen(false);
   };
@@ -38,56 +36,52 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
       <DialogContent className="sm:max-w-md bg-background border-border">
         <DialogHeader>
           <DialogTitle className="font-display text-xl text-foreground">
-            {type === "client" ? "Trouver un Expert R&D" : "Rejoindre le Réseau d'Élite"}
+            {type === "client" ? t("form.clientTitle") : t("form.talentTitle")}
           </DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-2">
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              Nom complet <span className="text-primary">*</span>
+              {t("form.name")} <span className="text-primary">{t("form.required")}</span>
             </label>
             <Input
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              placeholder={type === "client" ? "Votre nom" : "Dr. / Prof. Nom"}
+              placeholder={type === "client" ? t("form.namePlaceholderClient") : t("form.namePlaceholderTalent")}
               maxLength={100}
             />
           </div>
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              Email <span className="text-primary">*</span>
+              {t("form.email")} <span className="text-primary">{t("form.required")}</span>
             </label>
             <Input
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              placeholder="votre@email.com"
+              placeholder={t("form.emailPlaceholder")}
               maxLength={255}
             />
           </div>
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              {type === "client" ? "Organisation" : "Université / Institution"}
+              {type === "client" ? t("form.orgLabel") : t("form.orgLabelTalent")}
             </label>
             <Input
               value={form.organization}
               onChange={(e) => setForm({ ...form, organization: e.target.value })}
-              placeholder={type === "client" ? "Nom de votre entreprise" : "Votre institution"}
+              placeholder={type === "client" ? t("form.orgPlaceholderClient") : t("form.orgPlaceholderTalent")}
               maxLength={150}
             />
           </div>
           <div>
             <label className="font-body text-sm text-muted-foreground mb-1 block">
-              {type === "client" ? "Décrivez votre besoin" : "Domaine d'expertise"}
+              {type === "client" ? t("form.messageClient") : t("form.messageTalent")}
             </label>
             <Textarea
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
-              placeholder={
-                type === "client"
-                  ? "Ex: Nous cherchons un expert en IA pour un projet de 3 mois..."
-                  : "Ex: PhD en Intelligence Artificielle, 5 ans d'expérience..."
-              }
+              placeholder={type === "client" ? t("form.messagePlaceholderClient") : t("form.messagePlaceholderTalent")}
               maxLength={1000}
               rows={3}
             />
@@ -96,7 +90,7 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
             type="submit"
             className="w-full py-3 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange"
           >
-            {type === "client" ? "Envoyer ma demande" : "Soumettre ma candidature"}
+            {type === "client" ? t("form.submitClient") : t("form.submitTalent")}
           </button>
         </form>
       </DialogContent>

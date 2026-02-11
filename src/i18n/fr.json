@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Processus",
+    "advantages": "Avantages",
+    "faq": "FAQ",
+    "findExpert": "Trouver un Expert"
+  },
+  "hero": {
+    "badge": "Plateforme d'Expertise à la Demande",
+    "title": "Le Pont de l'Excellence Scientifique entre ",
+    "titleHighlight": "l'Afrique et le Golfe",
+    "subtitle": "Accédez au Top 5% des talents R&D et à une expertise stratégique mondiale via un corridor vérifié, aligné sur la Vision Nationale du Qatar 2030.",
+    "btnClient": "Trouver un Expert R&D",
+    "btnTalent": "Rejoindre le Réseau d'Élite",
+    "h1": "Talents Certifiés Top 5%",
+    "h2": "Tech Scouting IA & Énergie",
+    "h3": "Conformité PI & SLA"
+  },
+  "problem": {
+    "challengeLabel": "Le Défi",
+    "challengeTitle": "L'Innovation au Qatar face à un double défi critique",
+    "challenges": [
+      "Accès aux Connaissances Émergentes : difficulté à identifier et valider rapidement des solutions de Tech Scouting en IA, Énergies Renouvelables et Smart Cities.",
+      "Ressources Qualifiées pour l'Exécution : besoin pressant de main-d'œuvre scientifique flexible (PhD, Ingénieurs) à coût compétitif."
+    ],
+    "solutionLabel": "La Solution",
+    "solutionTitle": "ResearchGuide : Un corridor structuré de talents",
+    "solutions": [
+      "Un Couloir de Compétences vérifié entre l'Afrique et le Golfe.",
+      "Expertise à la Demande alignée sur la Vision Nationale du Qatar 2030.",
+      "Écosystème robuste reliant le réservoir scientifique du Maroc aux entités souveraines du Qatar."
+    ]
+  },
+  "services": {
+    "label": "Nos Services",
+    "title": "Un Modèle Hybride Unique",
+    "subtitle": "Nous combinons la flexibilité d'Upwork, la confiance B2B de Toptal, la spécialisation de Kolabtree et le conseil élite de GLG.",
+    "items": [
+      { "title": "Talents Certifiés", "desc": "Un réservoir de PhD, chercheurs et ingénieurs seniors (Top 5-10%) rigoureusement sélectionnés via un processus en cinq étapes." },
+      { "title": "Conseil Stratégique Élite", "desc": "Accès rapide à des connaissances stratégiques mondiales et des décideurs pour la due diligence technologique." },
+      { "title": "Exécution R&D Flexible", "desc": "Main-d'œuvre scientifique pour l'analyse de données, la modélisation et l'ingénierie à des coûts compétitifs." },
+      { "title": "Conformité & PI", "desc": "Cadre contractuel sécurisé garantissant la cession de la propriété intellectuelle et le respect des standards de qualité (SLA)." }
+    ]
+  },
+  "process": {
+    "label": "Le Label \"Vetted\"",
+    "title": "Un processus de sélection en 5 étapes",
+    "subtitle": "Seuls les meilleurs 5% des candidats intègrent notre réseau d'élite.",
+    "steps": [
+      { "title": "Vérification Académique", "desc": "Validation des diplômes, publications et parcours de recherche." },
+      { "title": "Évaluation Technique", "desc": "Tests de compétences approfondis dans le domaine d'expertise ciblé." },
+      { "title": "Étude de Cas B2B", "desc": "Simulation d'une mission réelle pour évaluer la capacité d'exécution." },
+      { "title": "Compatibilité Culturelle", "desc": "Entretien évaluant l'adaptabilité et la communication interculturelle." },
+      { "title": "Vérification Contractuelle", "desc": "Mise en conformité juridique, PI et engagement SLA." }
+    ]
+  },
+  "advantages": {
+    "label": "Valeur Ajoutée",
+    "title": "Pourquoi choisir ResearchGuide ?",
+    "items": [
+      { "title": "Label Vetted (Top 5%)", "desc": "Vérification rigoureuse en 5 étapes garantissant l'excellence académique, la maîtrise technique et la fiabilité culturelle." },
+      { "title": "Conformité & Sécurité PI", "desc": "Gestion contractuelle stricte incluant la cession de la Propriété Intellectuelle pour sécuriser vos investissements." },
+      { "title": "Garantie SLA 72h", "desc": "Engagement de remplacement rapide d'un expert sous 72 heures si le profil ne correspond pas à vos attentes." },
+      { "title": "Service Bilingue", "desc": "Support dédié en Arabe et Anglais pour une médiation culturelle et une gestion de projet fluide." },
+      { "title": "Research Showcase", "desc": "Exclusivité permettant aux clients Élite de découvrir la prochaine vague de technologies émergentes." }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions Fréquentes",
+    "items": [
+      { "q": "Comment garantissez-vous la qualité des experts ?", "a": "Chaque talent suit un processus de vetting en cinq étapes : vérification académique, évaluation technique, étude de cas simulant une mission B2B, entretien de compatibilité culturelle et vérification contractuelle." },
+      { "q": "Qu'advient-il de la Propriété Intellectuelle (PI) ?", "a": "La sécurité est notre priorité. Tous nos talents signent un accord-cadre incluant la cession totale de la Propriété Intellectuelle au client dès la validation du projet." },
+      { "q": "Que se passe-t-il si un expert ne convient pas ?", "a": "Grâce à notre engagement SLA, nous garantissons un remplacement équivalent sous 72 heures pour minimiser tout risque d'interruption de vos travaux." },
+      { "q": "Quels sont les domaines d'expertise couverts ?", "a": "Nous nous concentrons sur les piliers de la R&D stratégique : IA, Énergies renouvelables, Smart Cities et ingénierie complexe." },
+      { "q": "Comment sont gérés les paiements pour les talents ?", "a": "Nous assurons une sécurité financière totale avec un paiement garanti sous 7 jours après la validation du livrable." }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à accélérer votre innovation ?",
+    "subtitle": "Rejoignez le corridor d'excellence scientifique entre l'Afrique et le Golfe.",
+    "clientLabel": "Organisations (Golfe)",
+    "clientTitle": "Accédez au top 5% de l'expertise scientifique africaine",
+    "clientDesc": "Trouvez des PhD, chercheurs et ingénieurs seniors pour vos projets R&D stratégiques.",
+    "clientBtn": "Trouver un Expert R&D",
+    "talentLabel": "Talents (Afrique)",
+    "talentTitle": "Valorisez votre expertise et rejoignez un réseau d'élite",
+    "talentDesc": "Accédez à des financements internationaux et des opportunités premium au Golfe.",
+    "talentBtn": "Rejoindre le Réseau"
+  },
+  "footer": {
+    "copyright": "© {{year}} ResearchGuide. Le Pont de l'Excellence Scientifique entre l'Afrique et le Golfe."
+  },
+  "form": {
+    "clientTitle": "Trouver un Expert R&D",
+    "talentTitle": "Rejoindre le Réseau d'Élite",
+    "name": "Nom complet",
+    "namePlaceholderClient": "Votre nom",
+    "namePlaceholderTalent": "Dr. / Prof. Nom",
+    "email": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "orgLabel": "Organisation",
+    "orgLabelTalent": "Université / Institution",
+    "orgPlaceholderClient": "Nom de votre entreprise",
+    "orgPlaceholderTalent": "Votre institution",
+    "messageClient": "Décrivez votre besoin",
+    "messageTalent": "Domaine d'expertise",
+    "messagePlaceholderClient": "Ex: Nous cherchons un expert en IA pour un projet de 3 mois...",
+    "messagePlaceholderTalent": "Ex: PhD en Intelligence Artificielle, 5 ans d'expérience...",
+    "submitClient": "Envoyer ma demande",
+    "submitTalent": "Soumettre ma candidature",
+    "required": "*",
+    "errorRequired": "Veuillez remplir les champs obligatoires.",
+    "errorEmail": "Veuillez entrer un email valide.",
+    "successClient": "Votre demande a été envoyée ! Nous vous contacterons sous 24h.",
+    "successTalent": "Votre candidature a été reçue ! Notre équipe vous contactera bientôt."
+  }
+}

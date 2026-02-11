@@ -21,80 +21,40 @@ const ProblemSection = () => (
   <section className="py-24 bg-section-alt">
     <div className="container mx-auto px-4">
       <div className="grid lg:grid-cols-2 gap-16">
-        {/* Problem */}
         <div>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={0}
-            variants={fadeUp}
-            className="text-gold font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3"
-          >
+          <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0} variants={fadeUp}
+            className="text-primary font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3">
             Le Défi
           </motion.p>
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={1}
-            variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8"
-          >
+          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
+            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
             L'Innovation au Qatar face à un double défi critique
           </motion.h2>
           <div className="space-y-5">
             {challenges.map((c, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                custom={i + 2}
-                variants={fadeUp}
-                className="flex gap-4 p-5 rounded-xl bg-card border border-border shadow-navy"
-              >
-                <AlertTriangle size={22} className="text-gold mt-0.5 shrink-0" />
+              <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i + 2} variants={fadeUp}
+                className="flex gap-4 p-5 rounded-xl bg-card border border-border shadow-purple">
+                <AlertTriangle size={22} className="text-primary mt-0.5 shrink-0" />
                 <p className="font-body text-sm text-muted-foreground leading-relaxed">{c}</p>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* Solution */}
         <div>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={0}
-            variants={fadeUp}
-            className="text-gold font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3"
-          >
+          <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0} variants={fadeUp}
+            className="text-secondary font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3">
             La Solution
           </motion.p>
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={1}
-            variants={fadeUp}
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8"
-          >
+          <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
+            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
             ResearchGuide : Un corridor structuré de talents
           </motion.h2>
           <div className="space-y-5">
             {solutions.map((s, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                custom={i + 2}
-                variants={fadeUp}
-                className="flex gap-4 p-5 rounded-xl bg-card border border-gold/20 shadow-gold"
-              >
-                <CheckCircle2 size={22} className="text-gold mt-0.5 shrink-0" />
+              <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i + 2} variants={fadeUp}
+                className="flex gap-4 p-5 rounded-xl bg-card border border-primary/20 shadow-orange">
+                <CheckCircle2 size={22} className="text-primary mt-0.5 shrink-0" />
                 <p className="font-body text-sm text-foreground leading-relaxed">{s}</p>
               </motion.div>
             ))}

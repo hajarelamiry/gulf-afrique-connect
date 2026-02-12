@@ -3,7 +3,7 @@
 
 type AppRoutes = "/"
 type AppRouteHandlerRoutes = "/api/forms/submit"
-type PageRoutes = "/Index" | "/NotFound"
+type PageRoutes = never
 type LayoutRoutes = "/"
 type RedirectRoutes = never
 type RewriteRoutes = never
@@ -13,8 +13,6 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 interface ParamMap {
   "/": {}
   "/api/forms/submit": {}
-  "/Index": {}
-  "/NotFound": {}
 }
 
 

@@ -89,10 +89,6 @@ export async function POST(request: NextRequest) {
               <td style="padding: 10px 12px; color: #888;">${new Date().toLocaleString('fr-FR')}</td>
             </tr>
           </table>
-
-          <div style="margin-top: 24px; padding: 12px; background: #fff7ed; border-radius: 6px; font-size: 13px; color: #888;">
-            ⚡ Répondre directement à cet email pour contacter ${safeName}.
-          </div>
         </div>
       `,
     });

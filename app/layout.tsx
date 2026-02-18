@@ -6,7 +6,7 @@ import ClientLayout from "@/components/ClientLayout";
 export const metadata: Metadata = {
   title: "ResearchGuide - The Bridge of Scientific Excellence",
   description:
-    "Access the Top 5% of R&D talent and world-class strategic expertise between Africa and the Gulf",
+    "Access elite R&D talent and strategic expertise through a verified corridor between Africa and the Gulf",
 };
 
 export const viewport: Viewport = {

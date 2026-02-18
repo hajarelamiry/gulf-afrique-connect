@@ -14,7 +14,6 @@ import Footer from "@/components/landing/Footer";
 const Index = () => {
   const { i18n } = useTranslation();
   const isRtl = i18n.language === "ar";
-
   return (
     <div className="min-h-screen" dir={isRtl ? "rtl" : "ltr"}>
       <Navbar />

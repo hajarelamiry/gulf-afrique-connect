@@ -1203,9 +1203,6 @@ h1, h2, h3, h4, h5, h6 {
 .items-stretch{
   align-items: stretch;
 }
-.justify-end{
-  justify-content: flex-end;
-}
 .justify-center{
   justify-content: center;
 }
@@ -1644,9 +1641,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text-center{
   text-align: center;
-}
-.text-right{
-  text-align: right;
 }
 .align-middle{
   vertical-align: middle;
@@ -3080,9 +3074,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .sm\:flex-row{
     flex-direction: row;
-  }
-  .sm\:flex-row-reverse{
-    flex-direction: row-reverse;
   }
   .sm\:flex-col{
     flex-direction: column;

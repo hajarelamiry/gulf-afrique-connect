@@ -22,10 +22,18 @@ const AboutSection = () => {
           className="text-primary font-body text-sm font-semibold tracking-[0.15em] uppercase mb-3 text-center">
           {t("about.label")}
         </motion.p>
-        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
-          className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-3">
-          {t("about.title")}
+        <motion.h2
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true }}
+           custom={1}
+           variants={fadeUp}
+           className="font-display text-3xl md:text-4xl font-bold text-center mb-3"
+         >
+           <span className="text-foreground">Research</span>
+           <span className="text-primary">Guide</span>
         </motion.h2>
+
         <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2} variants={fadeUp}
           className="font-body text-primary font-semibold text-center max-w-2xl mx-auto mb-6">
           {t("about.subtitle")}

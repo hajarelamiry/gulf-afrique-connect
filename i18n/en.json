@@ -4,18 +4,35 @@
     "process": "Process",
     "advantages": "Advantages",
     "faq": "FAQ",
+    "about": "About",
     "findExpert": "Find an Expert"
   },
   "hero": {
     "badge": "On-Demand Expertise Platform",
     "title": "The Bridge of Scientific Excellence between ",
     "titleHighlight": "Africa and the Gulf",
-    "subtitle": "Access the Top 5% of R&D talent and world-class strategic expertise through a verified corridor, aligned with Qatar's National Vision 2030.",
+    "subtitle": "Access elite R&D talent and strategic expertise through a verified corridor, aligned with Qatar's National Vision 2030.",
     "btnClient": "Find an R&D Expert",
     "btnTalent": "Join the Elite Network",
-    "h1": "Top 5% Certified Talents",
+    "h1": "Elite Certified Talents",
     "h2": "AI & Energy Tech Scouting",
     "h3": "IP Compliance & SLA"
+  },
+  "about": {
+    "label": "About",
+    "title": "ResearchGuide",
+    "subtitle": "An On-Demand Expertise Platform & Tech Scouting Hub.",
+    "description": "ResearchGuide is an innovative solution designed to strengthen the innovation and R&D ecosystem by creating a verified corridor between Africa and the Gulf. Our mission is to import targeted scientific skills and global strategic knowledge, perfectly aligned with the pillars of Qatar's National Vision 2030, particularly human and economic development.",
+    "hybridTitle": "A Unique Hybrid Model",
+    "hybridSubtitle": "We have combined the best elements of global leaders to create a solution tailored to the specific requirements of the Gulf market:",
+    "hybridItems": [
+      { "title": "Execution Flexibility", "desc": "Maximum responsiveness to quickly meet your expertise needs." },
+      { "title": "B2B Trust", "desc": "Rigorous vetting guaranteeing access to the top talents." },
+      { "title": "Scientific Specialization", "desc": "Specifically targeting PhDs and niche researchers." },
+      { "title": "Elite Strategic Advisory", "desc": "Secure access to decision-makers and market vision." }
+    ],
+    "corridorTitle": "Why the Morocco-Qatar Corridor?",
+    "corridorDesc": "We start with this strategic axis to validate the quality of academic vetting before regional expansion. Morocco offers a pool of high-quality scientific talent, often bilingual (Arabic/English/French), while Qatar has a strong demand for expertise for its large-scale projects."
   },
   "problem": {
     "challengeLabel": "The Challenge",
@@ -35,9 +52,9 @@
   "services": {
     "label": "Our Services",
     "title": "A Unique Hybrid Model",
-    "subtitle": "We combine Upwork's flexibility, Toptal's B2B trust, Kolabtree's specialization, and GLG's elite advisory.",
+    "subtitle": "We combine execution flexibility, B2B trust, scientific specialization, and elite strategic advisory for a complete solution.",
     "items": [
-      { "title": "Certified Talents", "desc": "A pool of PhDs, researchers and senior engineers (Top 5-10%) rigorously selected through a five-step process." },
+      { "title": "Certified Talents", "desc": "A pool of PhDs, researchers and senior engineers rigorously selected through a five-step process." },
       { "title": "Elite Strategic Advisory", "desc": "Rapid access to global strategic knowledge and decision-makers for technology due diligence." },
       { "title": "Flexible R&D Execution", "desc": "Scientific workforce for data analysis, modeling and engineering at competitive costs." },
       { "title": "Compliance & IP", "desc": "Secure contractual framework ensuring intellectual property assignment and quality standards (SLA)." }
@@ -46,7 +63,7 @@
   "process": {
     "label": "The \"Vetted\" Label",
     "title": "A 5-step selection process",
-    "subtitle": "Only the top 5% of candidates join our elite network.",
+    "subtitle": "Only the best candidates join our elite network.",
     "steps": [
       { "title": "Academic Verification", "desc": "Validation of degrees, publications and research track record." },
       { "title": "Technical Assessment", "desc": "In-depth skills testing in the targeted area of expertise." },
@@ -59,7 +76,7 @@
     "label": "Value Proposition",
     "title": "Why choose ResearchGuide?",
     "items": [
-      { "title": "Vetted Label (Top 5%)", "desc": "Rigorous 5-step verification ensuring academic excellence, technical mastery and cultural reliability." },
+      { "title": "Vetted Label", "desc": "Rigorous 5-step verification ensuring academic excellence, technical mastery and cultural reliability." },
       { "title": "IP Compliance & Security", "desc": "Strict contractual management including Intellectual Property assignment to secure your investments." },
       { "title": "72h SLA Guarantee", "desc": "Commitment to rapid expert replacement within 72 hours if the profile doesn't match your expectations." },
       { "title": "Bilingual Service", "desc": "Dedicated support in Arabic and English for cultural mediation and smooth project management." },
@@ -81,7 +98,7 @@
     "title": "Ready to accelerate your innovation?",
     "subtitle": "Join the scientific excellence corridor between Africa and the Gulf.",
     "clientLabel": "Organizations (Gulf)",
-    "clientTitle": "Access the top 5% of African scientific expertise",
+    "clientTitle": "Access elite African scientific expertise",
     "clientDesc": "Find PhDs, researchers and senior engineers for your strategic R&D projects.",
     "clientBtn": "Find an R&D Expert",
     "talentLabel": "Talents (Africa)",

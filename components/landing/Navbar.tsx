@@ -5,13 +5,26 @@ import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ExpertFormDialog from "./ExpertFormDialog";
 
+const langs = [
+  { code: "fr", label: "FR" },
+  { code: "en", label: "EN" },
+  { code: "ar", label: "AR" },
+];
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
-  const toggleLang = () => {
-    i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
+  const cycleLang = () => {
+    const currentIdx = langs.findIndex((l) => l.code === i18n.language);
+    const next = langs[(currentIdx + 1) % langs.length];
+    i18n.changeLanguage(next.code);
+    document.documentElement.setAttribute("dir", next.code === "ar" ? "rtl" : "ltr");
+    document.documentElement.setAttribute("lang", next.code);
   };
+
+  const currentLangLabel = langs.find((l) => l.code === i18n.language)?.label || "FR";
+  const nextLang = langs[(langs.findIndex((l) => l.code === i18n.language) + 1) % langs.length];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
@@ -21,6 +34,7 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-body text-muted-foreground">
+          <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
           <a href="#services" className="hover:text-primary transition-colors">{t("nav.services")}</a>
           <a href="#process" className="hover:text-primary transition-colors">{t("nav.process")}</a>
           <a href="#advantages" className="hover:text-primary transition-colors">{t("nav.advantages")}</a>
@@ -29,11 +43,12 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <button
-            onClick={toggleLang}
+            onClick={cycleLang}
             className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-md border border-border text-foreground hover:bg-muted transition-colors"
+            title={`Switch to ${nextLang.label}`}
           >
             <Globe size={16} />
-            {i18n.language === "fr" ? "EN" : "FR"}
+            {nextLang.label}
           </button>
           <ExpertFormDialog type="client">
             <button className="px-5 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-orange-light transition-colors">
@@ -44,11 +59,11 @@ const Navbar = () => {
 
         <div className="flex md:hidden items-center gap-2">
           <button
-            onClick={toggleLang}
+            onClick={cycleLang}
             className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium rounded-md border border-border text-foreground"
           >
             <Globe size={14} />
-            {i18n.language === "fr" ? "EN" : "FR"}
+            {currentLangLabel}
           </button>
           <button onClick={() => setOpen(!open)} className="text-foreground">
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -65,6 +80,7 @@ const Navbar = () => {
             className="md:hidden bg-white/95 backdrop-blur-lg overflow-hidden"
           >
             <div className="flex flex-col gap-4 p-6 text-muted-foreground font-body text-sm">
+              <a href="#about" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">{t("nav.about")}</a>
               <a href="#services" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">{t("nav.services")}</a>
               <a href="#process" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">{t("nav.process")}</a>
               <a href="#advantages" onClick={() => setOpen(false)} className="hover:text-primary transition-colors">{t("nav.advantages")}</a>

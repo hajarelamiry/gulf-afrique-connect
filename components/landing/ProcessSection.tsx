@@ -8,7 +8,8 @@ const fadeUp = {
 };
 
 const ProcessSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   const steps = t("process.steps", { returnObjects: true }) as { title: string; desc: string }[];
 
   return (
@@ -19,7 +20,7 @@ const ProcessSection = () => {
           {t("process.label")}
         </motion.p>
         <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1} variants={fadeUp}
-          className="font-display text-3xl md:text-4xl font-bold text-white text-center mb-4">
+          className="font-display text-3xl md:text-4xl font-bold text-white text-center mb-4" style={{ lineHeight: "1.4" }} >
           {t("process.title")}
         </motion.h2>
         <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2} variants={fadeUp}
@@ -28,7 +29,7 @@ const ProcessSection = () => {
         </motion.p>
 
         <div className="relative max-w-3xl mx-auto">
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-primary/20" />
+          <div className={`absolute top-0 bottom-0 w-px bg-primary/20 ${isRTL ? "right-6 md:right-8" : "left-6 md:left-8"}`}/>
           <div className="space-y-8">
             {steps.map((step, i) => (
               <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i + 3} variants={fadeUp}

@@ -1,13 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Users, Lightbulb } from "lucide-react";
+import { ArrowRight, Shield, Users, Lightbulb, ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ExpertFormDialog from "./ExpertFormDialog";
 
 const icons = [Users, Lightbulb, Shield];
 
 const HeroSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   const highlights = [
     { icon: icons[0], text: t("hero.h1") },
@@ -31,7 +32,7 @@ const HeroSection = () => {
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}
             className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             {t("hero.title")}
-            <span className="text-gradient-orange">{t("hero.titleHighlight")}</span>
+            <span className="text-gradient-orange">{" "}{t("hero.titleHighlight")}</span>
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
@@ -42,8 +43,9 @@ const HeroSection = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }}
             className="flex flex-col sm:flex-row gap-4 mb-14">
             <ExpertFormDialog type="client">
-              <button className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange">
-                {t("hero.btnClient")} <ArrowRight size={16} />
+               <button className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange">
+                {t("hero.btnClient")}{" "}
+                {isRTL ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
               </button>
             </ExpertFormDialog>
             <ExpertFormDialog type="talent">

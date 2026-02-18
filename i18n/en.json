@@ -44,9 +44,9 @@
     "solutionLabel": "The Solution",
     "solutionTitle": "ResearchGuide: A structured talent corridor",
     "solutions": [
-      "A Verified Skills Corridor between Africa and the Gulf.",
-      "On-Demand Expertise aligned with Qatar's National Vision 2030.",
-      "A robust ecosystem connecting Morocco's scientific pool to Qatar's sovereign entities."
+      "A Skills Corridor: We import high-quality African talent and strategic global knowledge.",
+      "Expertise on Demand: A platform that transforms complex needs into simplified execution, aligned with the pillars of Qatar's National Vision 2030.",
+      "Robust Ecosystem: A bridge between Morocco's scientific reservoir and the strong demand from sovereign funds and governmental entities in Qatar."
     ]
   },
   "services": {
@@ -116,7 +116,7 @@
     "namePlaceholderClient": "Your name",
     "namePlaceholderTalent": "Dr. / Prof. Name",
     "email": "Email",
-    "emailPlaceholder": "your@email.com",
+    "emailPlaceholder": "example@email.com",
     "orgLabel": "Organization",
     "orgLabelTalent": "University / Institution",
     "orgPlaceholderClient": "Your company name",

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ExpertFormDialog from "./ExpertFormDialog";
 
@@ -10,7 +10,8 @@ const fadeUp = {
 };
 
 const CTASection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   return (
     <section id="cta" className="py-24 bg-hero relative overflow-hidden">
@@ -32,7 +33,7 @@ const CTASection = () => {
             <p className="font-body text-sm text-white/60 mb-6 leading-relaxed">{t("cta.clientDesc")}</p>
             <ExpertFormDialog type="client">
               <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-sm hover:bg-orange-light transition-colors shadow-orange">
-                {t("cta.clientBtn")} <ArrowRight size={16} />
+                {t("cta.clientBtn")} {isRTL ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
               </button>
             </ExpertFormDialog>
           </motion.div>
@@ -44,7 +45,7 @@ const CTASection = () => {
             <p className="font-body text-sm text-white/60 mb-6 leading-relaxed">{t("cta.talentDesc")}</p>
             <ExpertFormDialog type="talent">
               <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-body font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
-                {t("cta.talentBtn")} <ArrowRight size={16} />
+                {t("cta.talentBtn")} {isRTL ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
               </button>
             </ExpertFormDialog>
           </motion.div>

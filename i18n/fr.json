@@ -44,9 +44,9 @@
     "solutionLabel": "La Solution",
     "solutionTitle": "ResearchGuide : Un corridor structuré de talents",
     "solutions": [
-      "Un Couloir de Compétences vérifié entre l'Afrique et le Golfe.",
-      "Expertise à la Demande alignée sur la Vision Nationale du Qatar 2030.",
-      "Écosystème robuste reliant le réservoir scientifique du Maroc aux entités souveraines du Qatar."
+      "Un Couloir de Compétences : Nous importons des talents africains de haute qualité et des connaissances stratégiques mondiales.",
+      "Expertise à la Demande : Une plateforme qui transforme le besoin complexe en exécution simplifiée, alignée sur les piliers de la Vision Nationale du Qatar 2030.",
+      "Écosystème Robuste : Un pont entre le réservoir scientifique du Maroc et la forte demande de fonds souverains et d'entités gouvernementales au Qatar."
     ]
   },
   "services": {
@@ -116,7 +116,7 @@
     "namePlaceholderClient": "Votre nom",
     "namePlaceholderTalent": "Dr. / Prof. Nom",
     "email": "Email",
-    "emailPlaceholder": "votre@email.com",
+    "emailPlaceholder": "exemple@email.com",
     "orgLabel": "Organisation",
     "orgLabelTalent": "Université / Institution",
     "orgPlaceholderClient": "Nom de votre entreprise",

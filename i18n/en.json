@@ -130,7 +130,7 @@
     "required": "*",
     "errorRequired": "Please fill in the required fields.",
     "errorEmail": "Please enter a valid email.",
-    "successClient": "Your request has been sent! We will contact you within 24h.",
-    "successTalent": "Your application has been received! Our team will contact you soon."
+    "successClient": "You will be among the first to access ResearchGuide. We will contact you very soon.",
+    "successTalent": "You will be among the first to access ResearchGuide. We will contact you very soon."
   }
 }

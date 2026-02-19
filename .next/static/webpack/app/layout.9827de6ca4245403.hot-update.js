@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Ccomponents%5C%5CClientLayout.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Cindex.css%22%2C%22ids%22%3A%5B%5D%7D&server=false!":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Ccomponents%5C%5CClientLayout.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Cindex.css%22%2C%22ids%22%3A%5B%5D%7D&server=false! ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./components/ClientLayout.tsx */ \"(app-pages-browser)/./components/ClientLayout.tsx\"));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"(app-pages-browser)/./index.css\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtZmxpZ2h0LWNsaWVudC1lbnRyeS1sb2FkZXIuanM/bW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyQyUzQSU1QyU1Q1BGRSU1QyU1Q2d1bGYtYWZyaXF1ZS1jb25uZWN0JTVDJTVDY29tcG9uZW50cyU1QyU1Q0NsaWVudExheW91dC50c3glMjIlMkMlMjJpZHMlMjIlM0ElNUIlMjJkZWZhdWx0JTIyJTVEJTdEJm1vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMkMlM0ElNUMlNUNQRkUlNUMlNUNndWxmLWFmcmlxdWUtY29ubmVjdCU1QyU1Q2luZGV4LmNzcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZzZXJ2ZXI9ZmFsc2UhIiwibWFwcGluZ3MiOiJBQUFBLG9MQUE2SDtBQUM3SDtBQUNBLGdKQUE2RSIsInNvdXJjZXMiOlsiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiLCB3ZWJwYWNrRXhwb3J0czogW1wiZGVmYXVsdFwiXSAqLyBcIkM6XFxcXFBGRVxcXFxndWxmLWFmcmlxdWUtY29ubmVjdFxcXFxjb21wb25lbnRzXFxcXENsaWVudExheW91dC50c3hcIik7XG47XG5pbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkM6XFxcXFBGRVxcXFxndWxmLWFmcmlxdWUtY29ubmVjdFxcXFxpbmRleC5jc3NcIik7XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Ccomponents%5C%5CClientLayout.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&modules=%7B%22request%22%3A%22C%3A%5C%5CPFE%5C%5Cgulf-afrique-connect%5C%5Cindex.css%22%2C%22ids%22%3A%5B%5D%7D&server=false!\n"));
+
+/***/ })
+
+});

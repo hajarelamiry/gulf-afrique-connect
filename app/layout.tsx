@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
 import "../index.css";
 import ClientLayout from "@/components/ClientLayout";
+import ClientOnlyToaster from "@/components/ClientOnlyToaster";
 
 export const metadata: Metadata = {
   title: "ResearchGuide - The Bridge of Scientific Excellence",
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body>
         <ClientLayout>
           {children}
-          <Toaster position="top-center" />
+          <ClientOnlyToaster />
         </ClientLayout>
       </body>
     </html>

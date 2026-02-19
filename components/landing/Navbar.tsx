@@ -50,11 +50,15 @@ const Navbar = () => {
             <Globe size={16} />
             {nextLang.label}
           </button>
-          <ExpertFormDialog type="client">
-            <button className="px-5 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-orange-light transition-colors">
-              {t("nav.findExpert")}
-            </button>
-          </ExpertFormDialog>
+          <button
+            onClick={() => {
+              const section = document.getElementById("cta");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="px-5 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-orange-light transition-colors"
+          >
+            {t("nav.findExpert")}
+          </button>
         </div>
 
         <div className="flex md:hidden items-center gap-2">

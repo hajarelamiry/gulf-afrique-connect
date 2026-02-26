@@ -28,8 +28,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-sm font-body text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
           <a href="#services" className="hover:text-primary transition-colors">{t("nav.services")}</a>
-          <a href="#process" className="hover:text-primary transition-colors">{t("nav.process")}</a>
           <a href="#advantages" className="hover:text-primary transition-colors">{t("nav.advantages")}</a>
+          <a href="#process" className="hover:text-primary transition-colors">{t("nav.process")}</a>
           <a href="#faq" className="hover:text-primary transition-colors">{t("nav.faq")}</a>
         </div>
 

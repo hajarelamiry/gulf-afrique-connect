@@ -15,14 +15,6 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
-  const cycleLang = () => {
-    const currentIdx = langs.findIndex((l) => l.code === i18n.language);
-    const next = langs[(currentIdx + 1) % langs.length];
-    i18n.changeLanguage(next.code);
-    document.documentElement.setAttribute("dir", next.code === "ar" ? "rtl" : "ltr");
-    document.documentElement.setAttribute("lang", next.code);
-  };
-
   const currentLangLabel = langs.find((l) => l.code === i18n.language)?.label || "FR";
   const nextLang = langs[(langs.findIndex((l) => l.code === i18n.language) + 1) % langs.length];
 
@@ -41,38 +33,43 @@ const Navbar = () => {
           <a href="#faq" className="hover:text-primary transition-colors">{t("nav.faq")}</a>
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={cycleLang}
-            className="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-md border border-border text-foreground hover:bg-muted transition-colors"
-            title={`Switch to ${nextLang.label}`}
-          >
-            <Globe size={16} />
-            {nextLang.label}
-          </button>
-          <button
-            onClick={() => {
-              const section = document.getElementById("cta");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="px-5 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-orange-light transition-colors"
-          >
-            {t("nav.findExpert")}
-          </button>
+       
+           <div className="hidden md:flex items-center gap-3">
+        {/* Boutons langues visibles simultanément */}
+        <div className="flex gap-2">
+          {langs.map((lang) => (
+            <button
+              key={lang.code}
+              onClick={() => {
+                i18n.changeLanguage(lang.code);
+                document.documentElement.setAttribute("dir", lang.code === "ar" ? "rtl" : "ltr");
+                document.documentElement.setAttribute("lang", lang.code);
+              }}
+              className={`px-4 py-1 rounded-full font-medium text-sm transition-all duration-200
+                ${
+                  i18n.language === lang.code
+                    ? "bg-primary text-primary-foreground shadow-lg scale-105"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105"
+                }`}
+            >
+              {lang.label}
+            </button>
+          ))}
         </div>
-
-        <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={cycleLang}
-            className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium rounded-md border border-border text-foreground"
-          >
-            <Globe size={14} />
-            {currentLangLabel}
-          </button>
-          <button onClick={() => setOpen(!open)} className="text-foreground">
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+      
+        {/* Bouton CTA */}
+        <button
+          onClick={() => {
+            const section = document.getElementById("cta");
+            section?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="px-5 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-orange-light transition-colors"
+        >
+          {t("nav.findExpert")}
+        </button>
+      </div>
+      
+             
       </div>
 
       <AnimatePresence>

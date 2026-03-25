@@ -17,6 +17,7 @@ async function sendToMake(payload: {
   name: string;
   email: string;
   organization: string;
+  address: string;
   message: string;
   submitted_at: string;
 }) {
@@ -44,7 +45,7 @@ async function sendToMake(payload: {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { type, name, email, organization, message } = body;
+    const { type, name, email, organization, address, message } = body;
 
     // ── Validation ────────────────────────────────────────────────────────────
     if (!name?.trim() || !email?.trim() || !organization?.trim() || !message?.trim()) {
@@ -71,15 +72,17 @@ export async function POST(request: NextRequest) {
     const safeName    = escapeHtml(name.trim());
     const safeEmail   = escapeHtml(email.trim());
     const safeOrg     = escapeHtml(organization.trim());
+    const safeAddress = escapeHtml(address?.trim() || "");
     const safeMessage = escapeHtml(message.trim());
 
     // ── Send to Make (runs in parallel with email) ──────────────────────────
     const makePromise = sendToMake({
       type,
-      name:         safeName,
-      email:        safeEmail,
+      name: safeName,
+      email: safeEmail,
       organization: safeOrg,
-      message:      safeMessage,
+      address: safeAddress, // 👈 ajouté
+      message: safeMessage,
       submitted_at: new Date().toISOString(),
     });
 
@@ -126,6 +129,10 @@ export async function POST(request: NextRequest) {
                 ${type === "client" ? "Organisation" : "Institution / Labo"}
               </td>
               <td style="padding: 10px 12px;">${safeOrg}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px; font-weight: bold; color: #555;">Adresse</td>
+              <td style="padding: 10px 12px;">${safeAddress}</td>
             </tr>
             <tr style="background: #fafafa;">
               <td style="padding: 10px 12px; font-weight: bold; color: #555; vertical-align: top;">Message</td>

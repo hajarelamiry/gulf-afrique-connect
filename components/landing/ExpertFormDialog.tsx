@@ -15,7 +15,13 @@ interface ExpertFormDialogProps {
 const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    organization: "",
+    address: "", 
+    message: "",
+  });
   const { executeRecaptcha } = useGoogleReCaptcha();
   const { t } = useTranslation();
   const [recaptchaReady, setRecaptchaReady] = useState(false);
@@ -55,6 +61,7 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
           name: form.name,
           email: form.email,
           organization: form.organization,
+          address: form.address,
           message: form.message,
           recaptchaToken,
         }),
@@ -67,7 +74,7 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
       }
 
       toast.success(type === "client" ? t("form.successClient") : t("form.successTalent"));
-      setForm({ name: "", email: "", organization: "", message: "" });
+      setForm({ name: "", email: "", organization: "",address:"", message: "" });
       setOpen(false);
     } catch (error) {
       console.error("Form submission error:", error);
@@ -137,6 +144,17 @@ const ExpertFormDialog = ({ type, children }: ExpertFormDialogProps) => {
               placeholder={type === "client" ? t("form.orgPlaceholderClient") : t("form.orgPlaceholderTalent")}
               maxLength={150}
               required
+            />
+          </div>
+          <div>
+            <label className="font-body text-sm text-muted-foreground mb-1 block">
+              {t("form.address")}
+            </label>
+            <Input
+              value={form.address}
+              onChange={(e) => setForm({ ...form, address: e.target.value })}
+              placeholder={t("form.addressPlaceholder")}
+              maxLength={255}
             />
           </div>
           <div>

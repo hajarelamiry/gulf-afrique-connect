@@ -57,7 +57,7 @@ export default function AboutUsSection() {
             From Vision to Innovation
           </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              ResearchGuide is Monarkit’s flagship platform, created under the leadership of Dr. Salim El Bouanani, CEO of MONARK IT and PhD holder. Built on years of experience in delivering high-impact software and developing global expert networks, it combines AI orchestration with smart matchmaking to connect organizations with trusted researchers and R&D talent. Today, ResearchGuide transforms fragmented processes into a seamless system, helping teams move from idea to impact faster.
+              ResearchGuide is Monark IT’s flagship platform, created under the leadership of Dr. Salim El Bouanani, CEO of MONARK IT and PhD holder. Built on years of experience in delivering high-impact software and developing global expert networks, it combines AI orchestration with smart matchmaking to connect organizations with trusted researchers and R&D talent. Today, ResearchGuide transforms fragmented processes into a seamless system, helping teams move from idea to impact faster.
             </p>
             
           </div>

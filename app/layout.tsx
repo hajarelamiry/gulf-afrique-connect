@@ -3,6 +3,8 @@ import Script from "next/script";
 import "../index.css";
 import ClientLayout from "@/components/ClientLayout";
 import ClientOnlyToaster from "@/components/ClientOnlyToaster";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { ExpertFormModal } from "@/components/landing/ExpertFormDialog";
 
 export const metadata: Metadata = {
   title: "The Bridge of Scientific Excellence",
@@ -45,6 +47,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <ClientLayout>
           {children}
           <ClientOnlyToaster />
+          <WhatsAppButton />
+          <ExpertFormModal /> 
         </ClientLayout>
       </body>
     </html>

@@ -25,6 +25,7 @@ const Navbar = () => {
           <a href="#advantages" className="hover:text-primary transition-colors">{t("nav.advantages")}</a>
           <a href="#process" className="hover:text-primary transition-colors">{t("nav.process")}</a>
           <a href="#faq" className="hover:text-primary transition-colors">{t("nav.faq")}</a>
+          <a href="#roots" className="hover:text-primary transition-colors">{t("nav.roots")}</a>
         </div>
 
        

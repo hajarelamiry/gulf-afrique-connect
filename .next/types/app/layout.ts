@@ -1,4 +1,4 @@
-// File: C:\PFE\gulf-afrique-connect\app\layout.tsx
+// File: C:\PFE\to-do\gulf-afrique-connect\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

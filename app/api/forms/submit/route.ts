@@ -19,6 +19,7 @@ async function sendToMake(payload: {
   organization: string;
   address: string;
   message: string;
+  source: string;  
   submitted_at: string;
 }) {
   const webhookUrl = process.env.MAKE_WEBHOOK_URL;
@@ -40,14 +41,12 @@ async function sendToMake(payload: {
     console.error("Make webhook error:", err);
   }
 }
-// ─────────────────────────────────────────────────────────────────────────────
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { type, name, email, organization, address, message } = body;
+    const { type, name, email, organization, address, message, source } = body;
 
-    // ── Validation ────────────────────────────────────────────────────────────
     if (!name?.trim() || !email?.trim() || !organization?.trim() || !message?.trim()) {
       return NextResponse.json({ error: 'All fields are required' }, { status: 400 });
     }
@@ -55,7 +54,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email address' }, { status: 400 });
     }
 
-    // ── reCAPTCHA ─────────────────────────────────────────────────────────────
     const recaptchaToken = body.recaptchaToken;
     if (!recaptchaToken) {
       return NextResponse.json({ error: "reCAPTCHA manquant" }, { status: 400 });
@@ -75,18 +73,17 @@ export async function POST(request: NextRequest) {
     const safeAddress = escapeHtml(address?.trim() || "");
     const safeMessage = escapeHtml(message.trim());
 
-    // ── Send to Make (runs in parallel with email) ──────────────────────────
-    const makePromise = sendToMake({
+     const makePromise = sendToMake({
       type,
       name: safeName,
       email: safeEmail,
       organization: safeOrg,
-      address: safeAddress, // 👈 ajouté
+      address: safeAddress,
       message: safeMessage,
+      source: source,
       submitted_at: new Date().toISOString(),
     });
 
-    // ── Send notification email ───────────────────────────────────────────────
     const emailPromise = resend.emails.send({
       from: "onboarding@resend.dev",
       to: process.env.RECIPIENT_EMAIL!,
@@ -147,7 +144,7 @@ export async function POST(request: NextRequest) {
       `,
     });
 
-    // Run both in parallel
+
     const [{ error: notifError }] = await Promise.all([emailPromise, makePromise]);
 
     if (notifError) {

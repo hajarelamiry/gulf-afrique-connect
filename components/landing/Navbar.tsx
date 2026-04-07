@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ExpertFormDialog from "./ExpertFormDialog";
+import Image from "next/image";
 
 
 
@@ -14,9 +15,17 @@ const Navbar = () => {
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#" className="font-display text-xl font-bold text-foreground tracking-wide">
-          Research<span className="text-primary">Guide</span>
+      <div className="container mx-auto flex items-center justify-between h-23 px-4">
+      
+
+        <a href="#" className="flex items-center">
+          <Image 
+            src="/Logo ResearchGuide.svg" 
+            alt="ResearchGuide" 
+            width={140} 
+            height={32} 
+            priority 
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-body text-muted-foreground">

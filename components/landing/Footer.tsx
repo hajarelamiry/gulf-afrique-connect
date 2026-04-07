@@ -1,5 +1,7 @@
 "use client";
 import { Building2, Phone, Mail, MapPin, FlaskConical, Space } from "lucide-react";
+import Image from "next/image";
+
 
 const FooterSection = () => {
   return (
@@ -9,9 +11,16 @@ const FooterSection = () => {
 
         {/* LEFT : Brand + Services */}
         <div className="flex flex-col gap-2">
-          <p className="text-2xl font-semibold">
-            Research<span className="text-orange-500">Guide</span>
-          </p>
+          <a href="#" className="flex items-center">
+            <Image 
+              src="/Logo ResearchGuide.svg" 
+              alt="ResearchGuide" 
+              width={140} 
+              height={32} 
+              priority
+              className="brightness-0 invert"  // ← rend le logo blanc
+            />
+          </a>
           <p className="mt-1 text-sm text-white/60">
             Where Research Meets Opportunities
           </p>

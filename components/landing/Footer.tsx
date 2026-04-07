@@ -18,7 +18,7 @@ const FooterSection = () => {
               width={140} 
               height={32} 
               priority
-              className="brightness-0 invert"  // ← rend le logo blanc
+              className="brightness-0 invert" 
             />
           </a>
           <p className="mt-1 text-sm text-white/60">

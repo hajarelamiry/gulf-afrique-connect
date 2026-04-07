@@ -15,7 +15,7 @@ const Navbar = () => {
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
-      <div className="container flex items-center justify-between h-24 px-4">
+      <div className="container flex items-center justify-between h-[80px] px-4">
       
 
         <a href="#" className="flex items-center">

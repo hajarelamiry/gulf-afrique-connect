@@ -15,7 +15,7 @@ const Navbar = () => {
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-23 px-4">
+      <div className="container flex items-center justify-between h-24 px-4">
       
 
         <a href="#" className="flex items-center">
@@ -28,7 +28,7 @@ const Navbar = () => {
           />
         </a>
 
-        <div className="hidden md:flex items-center gap-8 text-sm font-body text-muted-foreground">
+        <div className="hidden md:flex items-center gap-8 text-xl font-body text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
           <a href="#services" className="hover:text-primary transition-colors">{t("nav.services")}</a>
           <a href="#advantages" className="hover:text-primary transition-colors">{t("nav.advantages")}</a>

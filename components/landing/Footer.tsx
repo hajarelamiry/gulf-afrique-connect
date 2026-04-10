@@ -49,6 +49,8 @@ const FooterSection = () => {
             <span>Innovation consulting services</span><span>.</span>
             <span>Applied physics</span><span>.</span>
             <span>Virtual research environment</span><span>.</span>
+            <span>Tech scouting</span><span>.</span>
+            <span>R&D operations</span><span>.</span>
             
           </div>
         </div>

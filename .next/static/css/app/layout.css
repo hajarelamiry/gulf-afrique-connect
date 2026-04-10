@@ -952,9 +952,6 @@ h1, h2, h3, h4, h5, h6 {
 .h-14{
   height: 3.5rem;
 }
-.h-16{
-  height: 4rem;
-}
 .h-2{
   height: 0.5rem;
 }
@@ -997,6 +994,9 @@ h1, h2, h3, h4, h5, h6 {
 .h-\[500px\]{
   height: 500px;
 }
+.h-\[80px\]{
+  height: 80px;
+}
 .h-\[var\(--radix-navigation-menu-viewport-height\)\]{
   height: var(--radix-navigation-menu-viewport-height);
 }
@@ -1014,24 +1014,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .h-svh{
   height: 100svh;
-}
-.h-1{
-  height: 0.25rem;
-}
-.h-20{
-  height: 5rem;
-}
-.h-24{
-  height: 6rem;
-}
-.h-\[85px\]{
-  height: 85px;
-}
-.h-\[8px\]{
-  height: 8px;
-}
-.h-\[80px\]{
-  height: 80px;
 }
 .max-h-96{
   max-height: 24rem;
@@ -1162,6 +1144,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .min-w-\[var\(--radix-select-trigger-width\)\]{
   min-width: var(--radix-select-trigger-width);
+}
+.min-w-\[200px\]{
+  min-width: 200px;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -1774,6 +1759,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pt-4{
   padding-top: 1rem;
+}
+.pt-8{
+  padding-top: 2rem;
+}
+.pt-16{
+  padding-top: 4rem;
+}
+.pt-7{
+  padding-top: 1.75rem;
 }
 .text-left{
   text-align: left;

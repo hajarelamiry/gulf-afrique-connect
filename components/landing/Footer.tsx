@@ -26,26 +26,35 @@ const FooterSection = () => {
           </p>
 
           <div className="mt-4 flex flex-wrap gap-x-2 gap-y-2 text-xs text-white/60 max-w-md">
-            <span>R&D Solutions On Demand</span><span>·</span>
-            <span>Proof of Concept (POC) Services</span><span>·</span>
-            <span>Scientific POC Platform</span><span>·</span>
-            <span>Outsourced R&D Services</span><span>·</span>
-            <span>Research & Innovation Marketplace</span><span>·</span>
-            <span>Hire Researchers for R&D Projects</span><span>·</span>
-            <span>Deeptech Innovation Solutions</span><span>·</span>
-            <span>Applied Research Services</span><span>·</span>
-            <span>Technology Validation & POC Development</span>
-            <span>professional research writing services·</span>
-            <span>it consulting services near me.</span>
-            <span>technology consulting firm.</span>
-            <span>technology consulting firms near me.</span>
-            <span>research consulting services.</span>
-            <span>power research and development consultants private limited.</span>
+            <span>Innovation consulting services</span><span>·</span>
+            <span>R&D consulting</span><span>·</span>
+            <span>R&D outsourcing</span><span>·</span>
+            <span>Artificial intelligence experts</span><span>·</span>
+            <span>Renewable energy consultant</span><span>·</span>
+            <span>Scientific research methods</span><span>·</span>
+            <span>AI tools for academic research</span><span>·</span>
+            <span>Professional engineering consulting</span><span>·</span>
+            <span>Technology consulting firm</span><span>.</span>
+            <span>Research and development services</span><span>.</span>
+            <span>professional engineering consulting</span><span>.</span>
+            <span>Research monitoring</span><span>.</span>
+            <span>Journal ranking system</span><span>.</span>
+            <span>Research assistance</span><span>.</span>
+            <span>Research methodology</span><span>.</span>
+            <span>Data collection</span><span>.</span>
+            <span>Digital health</span><span>.</span>
+            <span>Earth sciences</span><span>.</span>
+            <span>Renewable energy consultant</span><span>.</span>
+            <span>Open access journals</span><span>.</span>
+            <span>Innovation consulting services</span><span>.</span>
+            <span>Applied physics</span><span>.</span>
+            <span>Virtual research environment</span><span>.</span>
+            
           </div>
         </div>
 
         {/* CENTER : Quick Links */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left pt-7 min-w-[200px]">
           <p className="text-white font-semibold mb-3 text-lg">Quick Links</p>
           <ul className="space-y-2 text-sm text-white/70">
             <li><a href="#about" className="hover:text-white">About Us</a></li>
@@ -77,7 +86,7 @@ const FooterSection = () => {
         </div>
 
         {/* RIGHT : Contact Info */}
-        <div className="flex flex-col gap-3 text-base text-white/70">
+        <div className="flex flex-col gap-3 text-base text-white/70 pt-7">
 
           <p className="text-white font-semibold mb-2 text-lg">Contact Us</p>
 

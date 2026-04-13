@@ -51,7 +51,7 @@ const FooterSection = () => {
             <span>tech scouting</span><span>.</span>
             <span>Virtual research environment</span><span>.</span>
             <span>Tech scouting</span><span>.</span>
-            <span>R&D operations</span><span>.</span>
+            <span>R&D operations</span>
             
           </div>
         </div>

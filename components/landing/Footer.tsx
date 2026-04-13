@@ -28,27 +28,27 @@ const FooterSection = () => {
           <div className="mt-4 flex flex-wrap gap-x-2 gap-y-2 text-xs text-white/60 max-w-md">
             <span>Innovation consulting services</span><span>·</span>
             <span>R&D consulting</span><span>·</span>
-            <span>R&D outsourcing</span><span>·</span>
+            <span>R&D outsourcing</span>
             <span>Artificial intelligence experts</span><span>·</span>
-            <span>Renewable energy consultant</span><span>·</span>
+            <span>Renewable energy consultant</span>
             <span>Scientific research methods</span><span>·</span>
-            <span>AI tools for academic research</span><span>·</span>
+            <span>AI tools for academic research</span>
             <span>Professional engineering consulting</span><span>·</span>
-            <span>Technology consulting firm</span><span>.</span>
+            <span>Technology consulting firm</span>
             <span>Research and development services</span><span>.</span>
             <span>professional engineering consulting</span>
             <span>Research monitoring</span><span>.</span>
             <span>Journal ranking system</span><span>.</span>
-            <span>Research assistance</span><span>.</span>
+            <span>Research assistance</span>
             <span>Research methodology</span><span>.</span>
             <span>Data collection</span><span>.</span>
             <span>Digital health</span>
             <span>Earth sciences</span>
             <span>Renewable energy consultant</span><span>.</span>
-            <span>Open access journals</span><span>.</span>
+            <span>Open access journals</span>
             <span>Innovation consulting services</span><span>.</span>
             <span>Applied physics</span><span>.</span>
-            <span>tech scouting</span><span>.</span>
+            <span>tech scouting</span>
             <span>Virtual research environment</span><span>.</span>
             <span>Tech scouting</span><span>.</span>
             <span>R&D operations</span>

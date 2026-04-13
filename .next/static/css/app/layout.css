@@ -1139,14 +1139,14 @@ h1, h2, h3, h4, h5, h6 {
 .min-w-\[12rem\]{
   min-width: 12rem;
 }
+.min-w-\[200px\]{
+  min-width: 200px;
+}
 .min-w-\[8rem\]{
   min-width: 8rem;
 }
 .min-w-\[var\(--radix-select-trigger-width\)\]{
   min-width: var(--radix-select-trigger-width);
-}
-.min-w-\[200px\]{
-  min-width: 200px;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -1759,12 +1759,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pt-4{
   padding-top: 1rem;
-}
-.pt-8{
-  padding-top: 2rem;
-}
-.pt-16{
-  padding-top: 4rem;
 }
 .pt-7{
   padding-top: 1.75rem;
